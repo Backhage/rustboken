@@ -1,0 +1,6 @@
+[book]
+authors = ["Eric Backhage"]
+language = "en"
+multilingual = false
+src = "src"
+title = "\"Programmera i Rust\""
