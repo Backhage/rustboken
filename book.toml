@@ -1,6 +1,6 @@
 [book]
 authors = ["Eric Backhage"]
-language = "en"
+language = "sv"
 multilingual = false
 src = "src"
 title = "\"Programmera i Rust\""
