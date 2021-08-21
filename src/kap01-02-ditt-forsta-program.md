@@ -18,3 +18,25 @@ Skapa nu ditt första program i Rust genom att:
 
 Gick allt bra ska du inte få några felmeddelanden och ```Hello, world!``` skrivs
 ut i terminalen.
+
+## Programmets uppbyggnad 
+
+En snabb analys av programkoden ger att den består av en funktion, ```main```,
+där ```println!``` anropas. Funktionen ```main``` är speciell genom att den 
+anropas per automatik när det kompilerade programmet körs. Prova gärna att byta
+namn på funktionen till något annat och försök att kompilera programmet igen.
+Kompilatorn kommer då att ge ett felmeddelande som säger att ingen funktion med
+namnet ```main``` kunde hittas och att du behöver lägga till en sådan.
+
+Den uppmärksamma läsaren noterade utropstecknet i ```println!``` vilket
+förtjänar en förklaring. Detta beror på att ```println!``` inte är en vanlig
+funktion, utan ett makro. I Rust skiljer sig anrop till funktioner och makron
+genom att makron har ett avslutande utropstecken i namnet.
+
+## Makrot println!
+
+Makron är vanligt förekommande i flera programspråk. Ofta omvandlas makrokoden
+till vanlig kod i ett försteg innan själva kompileringen. Du som utvecklare
+behöver oftast inte tänka så mycket på att det är ett makro som används istället
+för ett funktionsanrop men det är intressant att förstå vilka egenskaper hos
+```println!``` som gör att det inte passar som en vanlig funktion.
