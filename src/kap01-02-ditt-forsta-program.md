@@ -40,3 +40,13 @@ till vanlig kod i ett försteg innan själva kompileringen. Du som utvecklare
 behöver oftast inte tänka så mycket på att det är ett makro som används istället
 för ett funktionsanrop men det är intressant att förstå vilka egenskaper hos
 ```println!``` som gör att det inte passar som en vanlig funktion.
+
+Att definiera ```println!``` som ett makro tillåter:
+1. Varierande antal argument
+2. Kontroll att antalet platshållare och argument överensstämmer
+3. Att argumenten automatisk behandlas som referenser
+
+Dessa egenskaper stöds inte av vanliga funktioner. Det gör inget om du inte
+förstår de här detaljerna än, de förklaras mer ingående i senare kapitel. Just
+nu räcker det att du accepterar att makron har viktiga egenskaper som funktioner
+saknar.
